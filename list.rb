@@ -14,6 +14,9 @@ class MyList
 end
 
 list = MyList.new(1, 2, 3, 4)
+list.each do |e|
+  p(e)
+end
 
 p(list.all? { |e| e < 5 })
 

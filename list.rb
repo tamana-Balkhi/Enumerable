@@ -9,7 +9,11 @@ class MyList
   end
 
   def each
-    yield(@list)
+    counter = 0
+    while counter < @list.length
+      yield(@list[counter])
+      counter += 1
+    end
   end
 end
 
